@@ -2,11 +2,8 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Montserrat', sans-serif; */
 body {
-  /* margin: 0;
-  padding: 0; */
-
   font-family: 'Montserrat', sans-serif;
-  color: #222;
+  color: #171717;
 }
 
 img {
@@ -19,4 +16,128 @@ ul li {
 
 * {
   box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
 }
+
+.container {
+  width: 1171px;
+
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+
+
+/* HEADER */
+
+
+.logo {
+  display: inline-block;
+  text-align: center;
+
+
+}
+
+.fashion-logo {
+  font: 800 28px/32px 'Montserrat', sans-serif;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  margin-bottom: -26px;
+  display: block;
+}
+
+.fashion-logo2 {
+  font: normal 12px/16px 'Montserrat', sans-serif;
+  letter-spacing: 0.77px;
+  text-transform: uppercase;
+}
+
+.main-nav {
+  min-height: 102px;
+  border-bottom: 6px solid #f3ebdc;
+
+  padding: 38px 54px 20px 108px;
+
+  display: flex;
+}
+
+.menu-main {
+  display: flex;
+  /* flex-wrap: wrap; */
+
+  font: bold 12px/23px 'Montserrat', sans-serif;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+
+  margin-left: 221px;
+}
+
+.small-nav {
+  padding-right: 100px;
+}
+
+.menu-side {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100px;
+  margin-left: auto;
+}
+
+/* main-screen */
+header {
+  position: relative;
+}
+
+.side-nav {
+  position: absolute;
+   
+  width: 65px;
+  height: 988px;
+
+  background-color: #ededed;
+}
+
+.side-nav li {  
+  position: absolute;
+  left: 24px;
+}
+
+.side-nav li:first-child {top: 274px;}
+.side-nav li:nth-child(2) {top: 336px;}
+.side-nav li:nth-child(3) {top: 397px;}
+.side-nav li:nth-child(4) {top: 456px;}
+.side-nav li:nth-child(5) {top: 516px;}
+
+
+.rotate-menu {
+  transform: rotate(-90deg);
+
+  padding-bottom: 55px;
+
+  font: 600 10px 'Montserrat', sans-serif;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+.banner {
+  background: url(img/banner.jpg) #00b7d9;
+
+  width: 1171px;
+  height: 250px;
+}
+
+.newsletter {
+  background: url(img/subscribe.jpg) #d7dbd5;
+
+  width: 1171px;
+  height: 250px;
+}
+
