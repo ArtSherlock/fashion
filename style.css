@@ -1,6 +1,3 @@
-/* font-family: 'Raleway', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Montserrat', sans-serif; */
 body {
   font-family: 'Montserrat', sans-serif;
   color: #171717;
@@ -12,6 +9,11 @@ img {
 
 ul li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 * {
@@ -33,12 +35,12 @@ ul li {
 /* HEADER */
 
 
-.logo {
+a.logo {
   display: inline-block;
   text-align: center;
 
 
-}
+  }
 
 .fashion-logo {
   font: 800 28px/32px 'Montserrat', sans-serif;
@@ -79,6 +81,10 @@ ul li {
   padding-right: 100px;
 }
 
+.small-nav:hover {
+  color: #666666;
+}
+
 .menu-side {
   display: flex;
   justify-content: space-between;
@@ -88,15 +94,18 @@ ul li {
 }
 
 /* main-screen */
-header {
+.main-slide {
   position: relative;
+  background: url(img/main-screen.jpg) #ededed no-repeat;
+
+  height: 1000px;
 }
 
 .side-nav {
   position: absolute;
    
   width: 65px;
-  height: 988px;
+  height: 1000px;
 
   background-color: #ededed;
 }
@@ -122,6 +131,252 @@ header {
   letter-spacing: 1.4px;
   text-transform: uppercase;
 }
+
+.main-block {
+  padding: 105px 0 0 948px;
+}
+
+h1 {
+  font: 700 117px/108px 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.prev-next {
+  font: 600 12px/10px 'Montserrat', sans-serif;
+  letter-spacing: 2.16px;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 195px;
+  right: 280px;
+}
+
+.prev-next li:first-child {
+  color: white;
+
+  margin-bottom: 23px;
+}
+
+.wear-01 {
+  font: 600 14px 'Montserrat', sans-serif;
+
+  margin: -54px 0 29px 0;  
+}
+
+.zero-1 {
+  font: 700 18px 'Montserrat', sans-serif;
+  margin-right: 30px;
+}
+
+.block-reaction {
+  display: flex;  
+  justify-content: space-between;
+
+  width: 142px;
+
+  margin-bottom: 42px;
+}
+
+.block-reaction li {
+  fill: currentColor;
+  color: #171717;
+
+  width: 37px;
+  height: 37px;
+
+  border: 1px solid #171717;
+  border-radius: 50%;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.block-reaction li:hover {
+  fill: currentColor;
+  color: white;
+
+  background-color: #171717;
+}
+
+.lorem-ipsum {
+  font: 14px/26px 'Open Sans', sans-serif;
+  color: #535353;
+
+  width: 293px;
+
+  margin-bottom: 32px;
+}
+
+.shop-now {
+  display: inline-block;
+
+  width: 114px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #171717;
+
+  font-size: 9px;
+  color: white;
+  text-align: center;
+
+  padding: 16px 10px;
+}
+
+/* -offer */
+.special-offer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 647px;  
+  height: 482px;
+
+  background: url(img/offer.jpg) 0 0 no-repeat;
+  padding: 50px 45px 65px 268px;
+}
+
+.offer-title {
+  font: 800 38px/46px 'Montserrat', sans-sefit;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+
+  margin-bottom: 17px;
+}
+
+.offer-subtitle {
+  font: 21px/30px 'Open Sans', sans-serif;
+  color: white;
+  letter-spacing: -0.44px;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+
+  margin: 30px 0 65px;
+}
+
+.old-price {
+  font-size: 22px;
+  text-decoration: line-through;
+  color: white;
+
+  margin-right: 13px;
+}
+
+.price {
+  font: 700 38px/46px  'Montserrat', sans-serif;
+  letter-spacing: -0.44px;
+  color: white;
+
+  margin-right: 49px;
+}
+
+.offer-button {
+  display: inline-block;
+
+  width: 125px;
+  height: 43px;
+  border-radius: 22px;
+  background-color: #f3ebdc;
+
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.78px;
+  text-align: center;
+
+  padding: 17px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-between;
+
+  width: 312px;  
+}
+
+.time {
+  width: 91px;
+  height: 105px;
+
+  border-radius: 20px;
+  background-color: white;
+
+  text-align: center;
+  padding: 25px 10px 20px;  
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.count {
+  font-size: 38px;
+  line-height: 20px;
+}
+
+.span-2 {
+  font-size: 15px;
+  letter-spacing: 1.11px;
+
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.span-3 {
+  font-size: 11px;
+  letter-spacing: 2.6px;
+}
+
+
+
+/* MAIN */
+
+
+.filter {
+margin: 80px 170px 54px ;
+
+font: 700 19px/15px 'Montserrat';
+letter-spacing: 2.6px;
+
+display: flex;
+justify-content: space-between;
+}
+
+.filter li:hover {
+  color: #666666;
+}
+
+.pop-items {
+  display: flex;
+
+  /* position: relative; */
+}
+
+/* .pop-items h3,
+.pop-items span,
+.pop-items a {
+  position: absolute;
+} */
+
+
+
+.product-types ul,
+.featured-products ul,
+.blogs ul,
+.info
+ {
+  display: flex;
+}
+
+
+
+
+
+
 
 
 
