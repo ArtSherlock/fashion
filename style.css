@@ -141,6 +141,15 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 26px;
+  color: #2d2b27;
+  text-transform: uppercase;
+  letter-spacing: 2.6px;
+
+  text-align: center;
+}
+
 .prev-next {
   font: 600 12px/10px 'Montserrat', sans-serif;
   letter-spacing: 2.16px;
@@ -226,6 +235,10 @@ h1 {
   padding: 16px 10px;
 }
 
+.shop-now:hover {
+  box-shadow: 0 4px 25px rgba(41, 52, 73, 0.5);
+}
+
 /* -offer */
 .special-offer {
   position: absolute;
@@ -293,6 +306,10 @@ h1 {
   padding: 17px;
 }
 
+.offer-button:hover {
+  box-shadow: 0 4px 15px #f3ebdc8a;
+}
+
 .countdown {
   display: flex;
   justify-content: space-between;
@@ -352,47 +369,267 @@ justify-content: space-between;
 
 .pop-items {
   display: flex;
+  justify-content: space-between;
 
-  /* position: relative; */
+  margin-bottom: 25px;
 }
 
-/* .pop-items h3,
-.pop-items span,
-.pop-items a {
+.pop-items li {
+  position: relative;  
+}
+
+.abs-1,
+.abs-2,
+.abs-3,
+.abs-4,
+.abs-new {
   position: absolute;
-} */
-
-
-
-.product-types ul,
-.featured-products ul,
-.blogs ul,
-.info
- {
-  display: flex;
 }
 
+.abs-1 {
+  bottom: 25px;
+  left: 54px;
+}
 
+.abs-2 {
+  left: 37px;
+  top: 124px;
+}
 
+.abs-3 {
+  left: 31px;
+  top: 72px;
+}
 
+.abs-4 {
+  left: 85px;
+  bottom: 30px;
+}
 
+.abs-new {
+  top: 15px;
+  right: 15px;
+}
 
+.pop-items ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+  height: 526px;
+}
 
+.type-clothes {
+  font: 500 13px/19px 'Raleway', sans-serif;
+  letter-spacing: 0.65px;
+}
 
+.abs-2 h3 {
+margin: 20px 0 40px;
+}
 
+.abs-3 h3 {
+  margin: 10px 0 35px;
+}
 
+.pop-button {
+  display: inline-block;
+  width: 114px;
+  height: 39px;
+
+  border-radius: 20px;
+  background-color: #171717;
+
+  font: 9px/13px 'Montserrat', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.78px;
+
+  padding: 13px 25px;
+}
+
+.pop-button:hover {
+  box-shadow: 0 4px 25px rgba(41, 52, 73, 0.5);
+}
+
+/* -banner */
 .banner {
   background: url(img/banner.jpg) #00b7d9;
 
   width: 1171px;
   height: 250px;
+
+  padding-left: 534px;
+  
+  padding-top: 55px;
+  margin-bottom: 105px;
 }
+
+.banner h2 {
+  text-align: left;
+}
+
+.banner .description {
+  font: 600 14px/20px 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5.6px;
+
+  display: inline-block;
+  margin: 17px 0 32px 51px;
+}
+
+.ban-button {
+  display: inline-block;
+
+  width: 244px;
+  height: 59px;
+
+  border-radius: 30px;
+  background-color: white;
+
+  font-size: 12px;
+  font-weight: 600;
+  color: #2b2b2b;
+  letter-spacing: 2.16px;  
+  text-align: center;
+
+  margin-left: 119px;
+  padding: 25px 30px;
+}
+
+.ban-button:hover {
+  box-shadow: 0 4px 25px rgba(41, 52, 73, 0.5);
+}
+
+/* -product types */
+.product-types {
+  position: relative;
+
+  margin-bottom: 100px;
+}
+
+.product-types h2 {
+  margin-bottom: 27px;
+}
+
+.product-types .description {
+  letter-spacing: 2.6px;
+  text-align: center;
+
+  display: block;
+  
+  margin-bottom: 45px;
+}
+
+.product-types ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-types li {
+  position: relative;
+}
+
+.product-types li a {
+  position: absolute;
+
+  bottom: 45px;
+  left: 97px;
+
+  width: 174px;
+  height: 59px;
+
+  border-radius: 30px;
+  background-color: #171717;
+
+  font-size: 13px;
+  letter-spacing: 0.78px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+
+  padding: 24px 30px;
+}
+
+.product-types li a:hover {
+  box-shadow: 0 4px 25px rgba(41, 52, 73, 0.5);
+}
+
+.prev,
+.next {
+  display: inline-block;
+  position: absolute;
+  bottom: 186px;
+
+  width: 112px;
+  height: 43px;
+  background-color: #afafaf;
+
+  
+  transform: rotate(-90deg);
+
+  font-size: 14px;
+  font-weight: 600;
+  color: #353535;
+  
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2.8px;
+
+  padding-top: 14px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #6b6b6b;
+}
+
+.prev { 
+  left: -124px;
+}
+
+.next {
+  right: -124px;
+}
+
+/* -featured products  */
+.featured-products {
+  margin-bottom: 42px;
+}
+
+.featured-products .filter {
+  margin: 53px 170px 58px ;
+}
+
+.models {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.models li {
+  width: 270px;
+  height: 389px;
+}
+
+
+
+
 
 .newsletter {
   background: url(img/subscribe.jpg) #d7dbd5;
 
   width: 1171px;
   height: 250px;
+}
+
+
+
+
+.blogs ul,
+.info {
+  display: flex;
 }
 
